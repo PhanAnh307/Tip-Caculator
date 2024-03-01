@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip - Calculator</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>TIP CALCULATOR</h1>
+      <div id="calculator">
+        <!--Form to fill the bill and service-->
+        <form>
+          <!--Type in bill amount-->
+          <p>Nhập số tiền trên hóa đơn</p>
+          <p id="dollarSign">$</p>
+          <input id="billamt" type="number" placeholder="Số lượng" />
+
+          <!--Select percen of tip want to share-->
+          <p>Chọn dịch vụ của bạn</p>
+          <select id="serviceQual">
+            <option value="0.3">30% - Mức cao nhất</option>
+            <option value="0.2">20% - Tuyệt vời</option>
+            <option value="0.15">15% - Trung Bình</option>
+            <option value="0.10">10% - Ổn</option>
+            <option value="0.05">5% - Khá tệ</option>
+          </select>
+
+          <!--Type in the number of people want to share-->
+          <p>Bạn muốn chia sẽ cho bao nhiêu người</p>
+          <input type="number" placeholder="Số lượng người" id="peopleamt" />
+          Người
+        </form>
+        <button id="calculate">Tính</button>
+      </div>
+      <div id="totalTip">
+        <sup>$</sup><span id="tip">0.00</span>
+        <small id="each">each</small>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
